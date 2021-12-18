@@ -1,3 +1,7 @@
+img.map {
+  width: 100%;
+}
+
 .map-holder {
   position: relative;
 }
