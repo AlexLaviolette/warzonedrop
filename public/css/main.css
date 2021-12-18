@@ -1,0 +1,10 @@
+.map-holder {
+  position: relative;
+}
+
+.x {
+  display:  none;
+  color: #01aefd;
+  position: absolute;
+  font-size: 70px;
+}
