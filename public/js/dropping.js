@@ -8,7 +8,7 @@ function displayX() {
   var widthScaling = $(".map").width() / initialWidth;
   var heightScaling = $(".map").height() / initialHeight;
 
-  $(".x").css({left: randomPOI[0] * widthScaling - 17 + 'px', top: randomPOI[1] * heightScaling - 45 + 'px', display: 'inline'});
+  $(".x").css({left: randomPOI[0] * widthScaling - 21 + 'px', top: randomPOI[1] * heightScaling - 32 + 'px', display: 'inline'});
 }
 
 function pickdrop() {
