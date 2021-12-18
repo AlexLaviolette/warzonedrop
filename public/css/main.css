@@ -1,5 +1,9 @@
 @font-face { font-family: NinjaNaruto; src: url('../fonts/njnaruto.ttf'); }
 
+body {
+  margin: 0;
+  background-color: #021837;
+}
 
 img.map {
   display: block;
