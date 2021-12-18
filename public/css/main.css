@@ -20,7 +20,6 @@ img.areas {
   position: relative;
   display: flex;
   touch-action: manipulation;
-  cursor: pointer;
 }
 
 div.left {
