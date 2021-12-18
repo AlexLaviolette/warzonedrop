@@ -27,7 +27,7 @@ function pickdrop() {
 
 $(window).on("load", function() {
   pickdrop();
-  $(".map-holder").click(pickdrop);
+  $("body").click(pickdrop);
 });
 
 $( window ).resize(displayX);

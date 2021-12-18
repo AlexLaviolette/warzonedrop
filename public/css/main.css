@@ -1,8 +1,33 @@
 @font-face { font-family: NinjaNaruto; src: url('../fonts/njnaruto.ttf'); }
+@font-face { font-family: Molot; src: url('../fonts/molot.otf'); }
+
+.nav {
+  color:  #F1B51C;
+}
+
+div.info {
+  width: 680px;
+  margin: auto;
+  font-size: 40px;
+  font-family: Molot;
+  cursor: pointer;
+}
+
+img.icon {
+  float: left;
+  margin-left: 10px;
+  width: 50px;
+  cursor: pointer;
+}
 
 body {
   margin: 0;
   background-color: #021837;
+  /* Disable double click selection */
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 img.map {
@@ -19,6 +44,7 @@ img.areas {
   width: 100%;
   position: relative;
   display: flex;
+  /* Disable double click zoom on mobile */
   touch-action: manipulation;
 }
 
@@ -41,11 +67,35 @@ div.right {
   span.x {
     font-size: 5vw;
   }
+
+  .nav div.info {
+    font-size: 30px;
+    width: 505px;
+    padding-top: 8px;
+  }
 }
 
 @media screen and (max-width: 800px) {
   span.x {
     font-size: 6vw;
+  }
+
+  .nav div.info {
+    font-size: 25px;
+    width: 420px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  span.x {
+    font-size: 7vw;
+  }
+
+  .nav div.info {
+    font-size: 20px;
+    width: 340px;
+    padding-top: 13px;
   }
 }
 
