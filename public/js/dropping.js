@@ -5,12 +5,20 @@ var randomPOI = pois[Math.floor((Math.random() * pois.length) + 1)];
 
 
 function displayX() {
+  var mapWidth = $(".map").width();
   // Scale the position of the X due to map size change
-  var widthScaling = $(".map").width() / initialWidth;
+  var widthScaling = mapWidth / initialWidth;
   var heightScaling = $(".map").height() / initialHeight;
   // Scale the position of the X due to font size change
   var xWidthOffset = $(".x").width() * 0.5
-  var xHeightOffset = $(".x").height() * (3/7)
+  var xHeightOffset = ($(".x").height() * (3/7)) + 4
+
+  // It seems font size does not scale linearly
+  if (mapWidth < 1130 && mapWidth > 650) {
+    xHeightOffset = xHeightOffset - 12
+  } else if (mapWidth < 650) {
+    xHeightOffset = xHeightOffset - 18
+  }
 
   $(".x").css({
     left: randomPOI[0] * widthScaling - xWidthOffset + 'px', 
