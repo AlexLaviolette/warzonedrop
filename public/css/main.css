@@ -42,6 +42,18 @@ div.right {
   }
 }
 
+@media screen and (max-width: 800px) {
+  span.x {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  span.x {
+    font-size: 7vw;
+  }
+}
+
 .x {
   display:  none;
   color: #01aefd;
