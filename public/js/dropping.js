@@ -12,7 +12,7 @@ function pickdrop() {
 }
 
 
-$(document).ready(function(){
+$(window).on("load", function() {
   pickdrop();
   $(".map").click(pickdrop);
 });
