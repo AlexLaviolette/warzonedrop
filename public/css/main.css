@@ -36,12 +36,16 @@ div.right {
   .map-holder div {
     width: 100%;
   }
+
+  span.x {
+    font-size: 5vw;
+  }
 }
 
 .x {
   display:  none;
   color: #01aefd;
   position: absolute;
-  font-size: 70px;
+  font-size: 3.4vw;
   font-family: NinjaNaruto;
 }
