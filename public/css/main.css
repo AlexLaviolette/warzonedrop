@@ -111,4 +111,6 @@ div.right {
   position: absolute;
   font-size: 3.4vw;
   font-family: NinjaNaruto;
+  -webkit-text-stroke-width: thin;
+  -webkit-text-stroke-color: yellow;
 }
