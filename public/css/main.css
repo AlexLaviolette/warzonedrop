@@ -20,6 +20,35 @@ img.icon {
   cursor: pointer;
 }
 
+img.menu {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-right: 10px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 8px;
+  top: 51px;
+  z-index: 1;
+  background-color: black;
+}
+
+.dropdown-menu a {
+  display: block;
+  font-family: Molot;
+  font-size: 30px;
+  margin-top: -1px;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+  border: solid 1px white;
+}
+
 body {
   margin: 0;
   background-color: #021837;

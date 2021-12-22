@@ -5,16 +5,22 @@
   <meta charset="UTF-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./public/js/rebirth.js"></script>
+  <script src="./public/js/main.js"></script>
   <link rel="stylesheet" href="./public/css/main.css">
   <link rel="stylesheet" href="./public/css/rebirth.css">
   <link rel="icon" type="image/x-icon" href="./public/img/favicon.png">
 </head>
 <body class='rebirth'>
   <div class='nav rebirth'>
-    <img class='icon' src="./public/img/favicon.png">
-    <div class='info'>Click anywhere for a new drop!</div>
+    <img class='icon' src="./public/img/favicon.png" onclick="window.location='./index.html';">
+    <div class='info click'>Click anywhere for a new drop!</div>
+    <img class="menu" src="./public/img/menu.jpeg">
   </div>
-  <div class='map-holder'>
+  <div class='dropdown-menu'>
+    <a href="./index.html">Caldera</a>
+    <a href="./rebirth.html">Rebirth</a>
+  </div>
+  <div class='map-holder click'>
       <img class='map' src="./public/img/rebirthmap.jpeg">
     <span class='x'>x</span>
   </div>

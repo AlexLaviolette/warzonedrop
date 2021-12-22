@@ -35,7 +35,7 @@ function pickdrop() {
 
 $(window).on("load", function() {
   pickdrop();
-  $("body").click(pickdrop);
+  $(".click").click(pickdrop);
 });
 
 $( window ).resize(displayX);
